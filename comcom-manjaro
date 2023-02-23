@@ -45,18 +45,18 @@ youtubemusic		#Standalone Youtube Music player
 fuzzel				#App launcher
 
 	Dotfiles - Git - ln -s {/path/to/file-name} {link-name}
-ln -s ~/dotfiles/sway-config ~/.config/sway/config
-.config/waybar/config
-.config/waybar/config
-.config/kitty/kitty.conf
-.config/wlogout/layout
-.config/wlogout/style.css
-.config/Code/settings.json
-.config/neofetch/config.conf
-.config/fuzzel/fuzzel.ini
 comcom-manjaro
-.azotebg
-.zshrc
+.config/sway/condig					ln -s ~/dotfiles/sway-config ~/.config/sway/config
+.config/waybar/config				ln -s ~/dotfiles/waybar-config ~/.config/waybar/config
+.config/waybar/config				ln -s ~/dotfiles/waybar-style.css ~/.config/waybar/style.css
+.config/kitty/kitty.conf			ln -s ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
+.config/wlogout/layout				ln -s ~/dotfiles/wlogout-layout ~/.config/wlogout/layout
+.config/wlogout/style.css			ln -s ~/dotfiles/wlogout-style.css ~/.config/wlogout/style.css
+.config/Code/settings.json			ln -s ~/dotfiles/Code-settings.json ~/.config/Code/settings.json
+.config/neofetch/config.conf		ln -s ~/dotfiles/neofetch-config.conf ~/.config/neofetch/config.conf
+.config/fuzzel/fuzzel.ini			ln -s ~/dotfiles/fuzzel.ini ~/.config/fuzzel/fuzzel.ini
+.azotebg							ln -s ~/dotfiles/azotebg ~/.azotebg
+.zshrc								ln -s ~/dotfiles/zshrc ~/.zshrc
 
 	Packages Not Used Much
 gparted                 # A Partition Magic clone, frontend to GNU Parted
