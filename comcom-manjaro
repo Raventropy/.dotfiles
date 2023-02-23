@@ -1,0 +1,296 @@
+Linux should hurt a little!	# DistroTube
+
+    Arch Standard Packages		# https://www.archlinux.org/packages/
+yay                     # Yet another yogurt. Pacman wrapper and AUR helper written in go.
+base-devel              # Make tools needed by yay  "Cannot find fakeroot binary"
+guake-git               # Top-down terminal for Gnome using gtk3 and vte3
+doublecmd-gtk2          # twin-panel (commander-style) file manager
+vlc                     # Multi-platform MPEG, VCD/DVD, and DivX player
+timeshift               # A system restore utility for Linux
+steam                   # Valve's digital software delivery system
+discord                 # All-in-one voice and text chat for gamers that's free and secure.
+qbittottent             # An advanced BitTorrent client
+cpu-x                   # A Free software that gathers information on CPU, motherboard and more
+neofetch                # A CLI system information tool written in BASH that supports displaying images.
+discord                 # All-in-one voice and text chat for gamers that's free and secure.
+gamemode		# A daemon/lib combo that allows games to request a set of optimisations
+pavucontrol             # PulseAudio Volume Control
+filelight               # View disk usage information
+protonup		# downloads the latest GE-Proton
+protonup-qt		# GE Manager
+brother-hll2390dw       # Brother HL-L2390DW CUPS driver
+system-config-printer	# Printer wizard that can be used to setup a network printer
+luckybackup             # Backup & Sync tool using Rsync and Qt5
+youtube-dl-git		# CLI Video Downloader touch ~/.config/youtube-dl/config Add: -o ~/Downloads/%(title)s.%(ext)s
+stacer                  # Ubuntu System Optimizer
+timelineproject-hg	# Timeline program
+
+	Swaywm
+azote				#Frontend for swaybg
+pcmanFM				#Sway File Manager
+cmatrix				#Matrix like display; q to quit; man page for option
+hollywood			#Hacker technobabble; Ctrl-C twice to quit
+PCmanFM				#Streamlined file manager
+kitty				#Streamlined terminal
+ranger				#File manager in terminal
+waybar				#Swaywm customizable status/info bar
+ttf-font-awesome	#Font with icons for various proggies
+code				#visual Studio Code IDE
+bluez				#Bluetooth basics
+bluetoothctl		#Command line bluetooth config
+bluemon				#Graphical bluetooth manager
+waybar				#Sway bar upgrade
+wlogout				#logout manager
+youtubemusic		#Standalone Youtube Music player
+fuzzel				#App launcher
+
+	Dotfiles - Git - ln -s {/path/to/file-name} {link-name}
+ln -s ~/dotfiles/sway-config ~/.config/sway/config
+.config/waybar/config
+.config/waybar/config
+.config/kitty/kitty.conf
+.config/wlogout/layout
+.config/wlogout/style.css
+.config/Code/settings.json
+.config/neofetch/config.conf
+.config/fuzzel/fuzzel.ini
+comcom-manjaro
+.azotebg
+.zshrc
+
+	Packages Not Used Much
+gparted                 # A Partition Magic clone, frontend to GNU Parted
+handbrake               # Multithreaded video transcoder
+lutris                  # Open Gaming Platform
+firewall		# Turn on the Linux firewall
+darktable		# Lightroom Photo Organizer and Simple Manipulation
+htop                    # Interactive process viewer
+alacarte                # Menu editor for gnome
+gnome-tweaks            # Graphical interface for advanced GNOME 3 settings (Tweak Tool)
+winetricks              # Script to install various redistributable runtime libraries in Wine.
+wine-staging            # A compatibility layer for running Windows programs - Staging branch
+eog			# Eye of Gnome; Basic Image Viewer
+kvantum-qy5		# SVG-based theme engine for Qt5
+kvantum-manjaro		# Qt5 themes that fit in with the Manjaro themes
+lxappearance            # Feature-rich GTK+ theme switcher of the LXDE Desktop
+nitrogen                # Background browser and setter for X windows
+rofi                    # A window switcher, application launcher and dmenu replacement
+psensor                 # A graphical hardware temperature monitor for Linux
+bleachbit               # Deletes unneeded files to free disk space and maintain privacy
+alacritty               # A cross-platform, GPU-accelerated terminal emulator
+grsync                  # GTK+ GUI for rsync to synchronize folders, files and make backups
+meld                    # Compare files, directories and working copies  
+pcmanfm                 # Extremely fast and lightweight file manager
+wavemon                 # Ncurses-based monitoring application for wireless network devices
+obs-studio              # Free, open source software for live streaming and recording
+sensors viewer		# Temp sensor viewer
+icaclient               # Citrix Webclient  # May need base-devel to be installed first
+proton-ge-custom	# Glorious Eggrolls Custom Proton
+albert			# Program Launcher/Search
+preload                 # Makes applications run faster by prefetching binaries
+ccextractor             # A fast closed captions extractor for MPEG files.
+makemkv                 # DVD and Blu-ray to MKV converter and network streamer
+caffeine                # Prevents the desktop becoming idle in full-screen mode.
+battlescribe            # An army list builder for table-top games.
+dropbox                 # A free service that lets you bring your files anywhere and share them
+protontricks            # A simple wrapper that does winetricks things for Proton enabled games.
+strongbox               # World of Warcraft addon manager. F/OSS, ad-free and privacy
+moonlight               # Open source implementation of NVIDIA's GameStream
+veyon                   # remote desktop across 
+material shell		# Tiling for Gnome
+ezthumb			# A video thumbnail generator based on ffmpeg.
+simplenote-electron-bin # The simplest way to keep notes
+openrazer-daemon        # Razer Compatibility Daemon    https://openrazer.github.io/
+polychromatic           # OpenRazer GUI     https://polychromatic.app/
+ttf-ms-fonts		# MS fonts systemwide
+yakuake-git             # A drop-down terminal emulator based on KDE konsole technology
+compton-conf    	# A graphical configuration tool for Compton X composite manager
+ulauncher               # Application launcher for Linux
+nvidia-smi		# Nvidia
+baobab			# Open GUI to see file usage on HDs ~WinDirStat
+
+    	Hardware Info:
+inxi -Fxxxz
+lshw --short
+hwinfo --short
+pydf
+fdisk -l
+free -m
+hdparm -i /dev/sda
+systemctl restart plexmediaserver.service
+systemd-analyze     #startup timing
+systemd-analyze blame   #individual startup timings
+for j in plasma*; do mv -- "$j" "${j%}.bak"; done #reset KDE settings to default; nav to ~/.config/
+lpinfo --include-schemes dnssd -v
+
+    	$PATH
+Updating $PATH - add directory to ~/.bashrc
+PATH=$PATH:/place/with/the/file     #add to end of .bashrc file
+source ~/.bashrc    #reload changes into terminal without a restart
+echo $PATH  #to see changes
+    	Aliases - Add to ~/.bash_aliases or ~/.bashrc file
+alias cneo='clear;neofetch'
+alias cm='cmatrix -bs'
+alias la='ls --color=auto -aFX'
+alias ll='ls --color=auto -lFX'
+alias ls='ls --color=auto -FX'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias h='history'
+
+alias home='cd /home/dave/public_html' # to add a new alias
+alias more='less'alias cp="cp -i"         # confirm before overwriting something
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
+alias grep='grep --colour=auto'
+alias more='less'
+alias np='nano -w PKGBUILD'
+alias ls='ls -shN --color=auto --group-directories-first'
+alias ram='ps axch -o cmd:15,%mem --sort=-%mem | head'
+alias cpu='ps axch -o cmd:15,%cpu --sort=-%cpu | head'
+alias mhz='watch -n 1 "cat /proc/cpuinfo | grep MHz"'
+
+	youtube-dl config and running
+~/.config/youtube-dl/config Add: -o ~/Downloads/%(title)s.%(ext)s
+youtube-dl -a ~/youtube-dl-playlist		#create the playlist first to store the DL URLs
+
+		Atom:
+packages:
+	atom-python-run
+	autocomplete-python/kite
+	hydrogen
+	file-icons
+	pigments
+	linter
+	minimap
+	script
+	atom-clock
+	#emmet
+themes:
+	predawn
+	OneDark/DarkPython Syntax
+
+   	Nonz-Repo Proggies
+install wigglemouse     # https://sourceforge.net/projects/wigglemouse/files/   # #java -Xms1024m -jar /home/raventropy/WiggleMouse/wigglemouse-2.6.1.jar 
+jdk-openjdk # Install first and I think it will work
+jre-openjdk
+
+	System76
+system76-driver         # Universal driver for System76 computers
+firmware-manager        # Generic framework and GTK UI for firmware updates from system76-firmware and fwupd
+system76-io-dkms        # This DKMS driver controls System76 IO devices
+system76-oled           # Control brightness on System76 OLED displays
+system76-power          # System76 Power Management
+pop-gtk-theme		# System76 Pop GTK+ Theme
+system76-firmware-daemon# System76 Firmware Daemon provides a daemon for installing firmware updates
+system76-wallpapers	# A collection of System76 Wallpapers
+
+	MangoHUD
+yay -S mangohud lib32-mangohud		#install
+mangohud %command%					#add to game command line in steam
+
+	Save audio settings
+alsamixer			#set settings like sidetone
+sudo alsactl store	#store settings in /etc/asound.state which is loaded at startup
+
+	Wayland or X
+loginctl show-session $(loginctl | grep $(whoami) | awk '{print $1}') -p Type 
+
+	Terminal print of system specs
+inxi -Fxz 
+
+sudo systemctl enable fstrim.timer		# Speeds up SSD drives
+sudo journalctl -p 3 -xb 				# Check for errors
+sudo systemctl --failed					# Check for errors
+
+	XBox One Controller Config		# ERTM - Enhanced Re-Transmission Mode causes problems and has to be disabled
+sudo sh -c 'echo 1 > /sys/module/bluetooth/parameters/disable_ertm'		# One time fix; does not persist after reboot
+sudo nano /etc/modprobe.d/bluetooth.conf		# Create new file
+options bluetooth disable_ertm=1				# Add this line to file to persist after reboot
+
+    	Install fresh Gnome 3
+sudo pacman -S gnome
+sudo pacman -S gnome-extra
+sudo pacman -S manjaro-gnome-assets manjaro-gdm-theme manjaro-settings-manager
+sudo systemctl enable gdm.service --force   # Sets gnome to load on restart
+
+    	Install fresh KDE-Plasma
+sudo pacman -S plasma kio-extras
+sudo pacman -S kde-applications
+sudo pacman -S manjaro-kde-settings sddm-breath-theme manjaro-settings-manager-knotifier manjaro-settings-manager-kcm
+sudo pacman -S breath2-icon-themes breath2-wallpaper plasma5-themes-breath2 sddm-breath2-theme
+systemctl enable sddm.service --force
+
+    	Install fresh XFCE
+sudo pacman -S xfce4-gtk3 xfce4-goodies xfce4-terminal network-manager-applet xfce4-notifyd-gtk3 xfce4-whiskermenu-plugin-gtk3 tumbler engrampa
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+sudo pacman -S manjaro-xfce-gtk3-settings manjaro-settings-manager
+sudo systemctl enable lightdm.service --force
+
+    	Install fresh Cinnamon      # https://linuxconfig.org/manjaro-linux-cinnamon-installation
+sudo pacman -S cinnamon
+sudo pacman -S cinnamon-wallpapers cinnamon-sounds gnome-terminal parcellite
+sudo pacman -S manjaro-cinnamon-settings adapta-maia-theme kvantum-manjaro
+$ sudo pacman -S lightdm lightdm-slick-greeter lightdm-settings
+$ sudo systemctl enable lightdm.service --force
+
+    	Install fresh i3wm      # https://wiki.manjaro.org/index.php/Install_Desktop_Environments
+sudo pacman -S i3-wm
+sudo pacman -S i3lock i3status
+
+    	Install fresh i3-gaps   # https://wiki.manjaro.org/index.php/Install_Desktop_Environments
+sudo pacman -S i3-gaps
+
+    	Install fresh awesome   # https://wiki.manjaro.org/index.php/Install_Desktop_Environments
+sudo pacman -S awesome
+sudo pacman -S vicious
+
+    	MakeMKV:
+sudo modprobe sg 						# to get optical drive to be visible
+pacman -Ql ccextractor					# to see where ccextractor is installed
+echo sg > /etc/modules-load.d/sg.conf	# to autoload the drive module
+
+    	Pacman tips and tricks (wiki.archlinux.org)
+Command                                     Description
+pacman -Syu <pkg> 	             Install (and update package list)
+pacman -S <pkg> 	                 Install only
+pacman -Rsc <pkg> 	             Uninstall
+pacman -Ss <keywords> 	     Search
+pacman -Syu 	                             Upgrade everything
+
+Query
+Command 	                                 Description
+pacman -Qe 	                             List explictly-installed packages
+pacman -Ql <pkg> 	                 What files does this package have?
+pacman -Qii <pkg> 	             List information on package
+pacman -Qo <file> 	                 Who owns this file?
+pacman -Qs <query> 	         Search installed packages for keywords
+
+Orphans
+Command 	                                                       Description
+pacman -Qdt 	                                                   List unneeded packages
+pacman -Rns $(pacman -Qdtq) 	               Uninstall unneeded packages
+pacman -Rn package_name 	                   Remove package and important config files
+pacman -Sc                                                        Removes packages from cache
+Avoid orphans by using pacman -Rsc       to remove packages, which will remove unneeded dependencies.
+
+Other
+Command 	                                 Description
+pactree <pkg> 	                         What does pkg depend on?
+pactree -r <pkg> 	                     What depends on pkg?
+References
+
+
+    	OpenSSH
+sudo pacman -S openssh
+sudo systemctl enable sshd
+sudo systemctl start sshd
+sudo nano /etc/ssh/ssh_config #client side config: to set Port to 13570 and ForwardX11 to yes :)
+sudo nano /etc/ssh/sshd_config #server side config: to set Port to 13570 and ForwardX11 to yes :)
+sudo systemctl restart sshd
+ssh -p portnumber remote@host
+xorg-xauth xorg-xhost
+ssh -X -p portnumber remote@host
